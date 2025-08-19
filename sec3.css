@@ -1,0 +1,99 @@
+.sec3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px ;
+    height: 80vh;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+.sec-3-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding : 20px;
+    
+}
+.sec-3-2{
+    display: flex;
+    gap: 50px;
+    
+}
+.box2{
+    width: 400px;
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px; 
+    gap: 15px;
+}
+.box2 > :nth-child(1){
+    font-size: 30px;
+    font-weight: 600;
+  
+}
+.skills{
+    display : grid;
+    grid-template-columns:  1fr 1fr;
+     gap: 30px 40px;
+    align-items: start;
+    justify-items: start; 
+}
+.skills-1{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+
+   
+}
+.skills-1 img {
+ width: 30px;    
+}
+.skills-1-2{
+    display: flex;
+    flex-direction: column;
+        
+   
+}
+.skills-1-2 > :nth-child(1){
+    font-size: 18px;
+    font-weight: 600;
+}
+@media (max-width: 1024px) {
+    .sec3 {
+        padding-top: 50px;
+        height: auto;
+        gap: 50px;
+    }
+    .sec-3-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box2 {
+        width: 90%;
+    }
+    .skills {
+        grid-template-columns: 1fr;
+    }
+    
+}
+@media (max-width: 767px) {
+    .sec3 {
+        padding-top: 50px;
+        height: auto;
+        gap: 50px;
+    }
+    .sec-3-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box2 {
+        width: 70%;
+    }
+    .skills {
+        grid-template-columns: 1fr;
+    }
+    
+}

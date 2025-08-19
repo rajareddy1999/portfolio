@@ -1,0 +1,138 @@
+.sec2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh; /* ensures section fills space but expands if needed */
+    height: auto;
+    padding:  20px;
+}
+.sec-2-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.sec-2-2{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 50px;
+    gap: 60px;
+    padding: 10px;
+}
+.sec-2-2-1 {
+  margin-left: 0px;
+}
+.sec-2-2-1 img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+.sec-2-2-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+/* Container for the boxes */
+.sec-2-2-2-1 {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;   /* makes it responsive */
+    justify-content: center;
+}
+
+/* Individual box */
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #0a0a09;
+    border-radius: 12px;
+    padding: 20px 30px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image inside box */
+.box img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+/* Text styling */
+.box span:first-of-type {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.box span:nth-of-type(2) {
+    color: #555;
+    font-size: 16px;
+}
+
+.box span:nth-of-type(3) {
+    color: #f47c1f;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.box:hover,
+.box:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover effect */
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+.p1{
+    width: auto;
+
+}
+@media (max-width: 1024px) {
+    .sec2{
+        height: 100%;
+        padding: 10px;
+    }
+    .sec-2-2{
+    flex-direction: column;
+    margin-top: 50px;
+
+    
+    
+}
+.sec-2-2-1 {
+  margin-left: 0px;
+}
+.sec-2-2-2 {
+   
+    align-items: center;
+}   
+}  
+@media (max-width: 767px) {
+    .sec-2-2-1 img{
+        width: 250px;
+    }
+    .box {
+        width: 100%;
+        max-width: 280px;
+    }
+    .box span:first-of-type {
+        font-size: 16px;
+    }
+    .box span:nth-of-type(2),
+    .box span:nth-of-type(3) {
+        font-size: 14px;
+    }
+}

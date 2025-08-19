@@ -1,0 +1,143 @@
+.sec1 {
+   display: flex;
+    align-items: center;
+    gap: 60px;
+    height: 90vh;
+    padding: 0 50px;
+    justify-content: center;
+}
+
+.sec-1-1 {
+    margin-left: 100px;
+}
+
+.sec-1-1 img {
+     width: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+
+.sec-1-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+}
+
+.sec-1-2-1 {
+    font-size: medium;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 50px;
+    color: darkorange;
+}
+
+.sec-1-2-3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+    
+    color: #333;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.btns1{
+    color:white;
+   padding: 10px 20px;
+    transition: all 0.3s ease;
+    border: 2px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: black;
+}
+.btns{
+    display: flex;
+    gap: 20px;
+}
+.btns1:hover {
+    background-color: darkorange;
+    color: white;
+    border-color: darkorange;
+}
+.btns1:hover,
+.btns1:focus {
+    background-color: darkorange;
+    color: white;
+    border-color: darkorange;
+}
+
+.social img {
+    width: 30px;
+     cursor: pointer;
+    transition: all 0.3s ease;
+}
+.social img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+@media (max-width: 1024px) {
+    .sec1 {
+    padding: 0px;
+        flex-direction: column;
+        
+    }
+    p{
+        text-align: center;
+        
+    }
+    .sec-1-1{
+        margin-left:0px;
+    }
+    .sec-1-1 img {
+       width: 450px;
+    }
+    .sec-1-2 {
+        align-items: center;
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 767px) {
+    .sec1 {
+        height: 200%;
+        flex-direction: column;
+        margin-bottom: 0px;
+        
+    }
+    h1{
+        font-size: 40px;
+    }
+    p {
+        text-align: center;
+    }
+    .sec-1-1{
+        margin-top: 50px;
+    }
+    .sec-1-1 img {
+       width: 300px;
+       
+    }
+    .sec-1-2 {
+        align-items: center;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 32px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
