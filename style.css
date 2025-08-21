@@ -21,16 +21,16 @@ a:hover{
 }
 .navbar {
   display: flex;
-  justify-content: space-between; /* pushes logo left, menu right */
-  align-items: center;           /* vertically centers them */
-  padding: 10px 20px;            /* space inside navbar */
-  background: white;             /* or your color */
+  justify-content: space-between; 
+  align-items: center;           
+  padding: 10px 20px;           
+  background: white;             
 }
 
 .logo {
   font-size: 22px;
   font-weight: bold;
-  color: #f47c1f;  /* orange shade */
+  color: #f47c1f;  
 }
 .menu-bar{
   
@@ -74,7 +74,7 @@ justify-content: space-around;
     flex-direction: column;
     position: fixed;
     background-color: darkorange;
-    right: -700px; /* hidden off screen */
+    right: -700px; 
     top: 70px;
     gap: 10px;
     border-radius: 5px;
@@ -82,7 +82,7 @@ justify-content: space-around;
     transition: right 0.3s ease;
 }
 
-/* when active */
+
 .navbar-menu .menu-bar.show {
     right: 0;
 }
